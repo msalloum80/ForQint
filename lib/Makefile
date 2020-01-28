@@ -1,0 +1,7 @@
+all:
+	gfortran -c *.f
+	ar cr libgh.a *.o
+	ranlib libgh.a
+	rm *.o
+clean:
+	-rm -rf *out *.mod *.a *.o
